@@ -82,11 +82,11 @@ const Projects = () => {
             A fully functional e-commerce website with features like product
             listing, shopping cart, and user authentication.
           </p>
-          <div className="flex gap-2">
+          <div className="flex font-bold m-1 gap-2">
             <span className="p-1 border bg-gray-500 rounded-xl">React</span>
-            <span className="p-1 border bg-gray-500 rounded-xl">node</span>
-            <span className="p-1 border bg-gray-500 rounded-xl">mongoDB</span>
-            <span className="p-1 border bg-gray-500 rounded-xl">express</span>
+            <span className="p-1 border bg-gray-500 rounded-xl">Node</span>
+            <span className="p-1 border bg-gray-500 rounded-xl">MongoDB</span>
+            <span className="p-1 border bg-gray-500 rounded-xl">Express</span>
           </div>
         </div>
       </div>
@@ -98,7 +98,7 @@ const Projects = () => {
             A personal portfolio website showcasing projects, skills, and
             contact information.
           </p>
-          <div className="flex gap-2">
+          <div className="flex font-bold m-1 gap-2">
             <span className="p-1 border bg-gray-500 rounded-xl">React</span>
             <span className="p-1 border bg-gray-500 rounded-xl">
               Teailwind CSS
