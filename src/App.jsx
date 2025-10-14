@@ -4,18 +4,16 @@ import Header from "./components/Header";
 import Technology from "./components/Technology";
 import MainContent from "./MainContent";
 import Projects from "./Projects";
+import Container from "./components/Container";
 
 function App() {
   return (
     <>
-      <div className=" text-white h-screen flex flex-col">
+      <Container>
         <Header />
         <MainContent />
-        <About />
-        <Technology />
-        <Projects />
-        <Footer />
-      </div>
+       
+      </Container>
     </>
   );
 }

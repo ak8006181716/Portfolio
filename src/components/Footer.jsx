@@ -37,10 +37,10 @@ const Footer = () => {
           <h1 className="last-tab text-center text-6xl  font-extralight text-gray-300">
             Get In Touch
           </h1>
-          <div className="mob flex items-center flex-col gap-3 pt-25">
+          <div className="mob flex text-white items-center flex-col gap-3 pt-25">
             <p>Pratap Vihar, Ghaziabad, Uttar Pradesh</p>
-            <p>+91 8006181716</p>
-            <p>ankitk8006@gmail.com</p>
+            <a className="hover:text-blue-500" href="tel:+918006181716">+91 8006181716</a>
+           <a className="hover:text-blue-500" href="mailto:ankitk8006@gmail.com">ankitk8006@gmail.com</a>
           </div>
         </div>
       </>
