@@ -222,7 +222,7 @@ const Contact = () => {
                 <a href="https://www.instagram.com/i_am_ankitkumar89" target="_blank" rel="noreferrer" className="group w-14 h-14 bg-gradient-to-r from-pink-600 to-pink-700 rounded-xl flex items-center justify-center hover:from-pink-500 hover:to-pink-600 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-pink-500/50 transform">
                   <FontAwesomeIcon icon={faInstagramBrand} className="text-white text-xl group-hover:scale-110 transition-transform duration-300" />
                 </a>
-                <a href="https://x.com/yourname" target="_blank" rel="noreferrer" className="group w-14 h-14 bg-gradient-to-r from-gray-800 to-gray-900 rounded-xl flex items-center justify-center hover:from-gray-700 hover:to-gray-800 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-gray-500/50 transform">
+                <a href="https://x.com/Ankit8006Kumar" target="_blank" rel="noreferrer" className="group w-14 h-14 bg-gradient-to-r from-gray-800 to-gray-900 rounded-xl flex items-center justify-center hover:from-gray-700 hover:to-gray-800 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-gray-500/50 transform">
                   <FontAwesomeIcon icon={faXTwitterBrand} className="text-white text-xl group-hover:scale-110 transition-transform duration-300" />
                 </a>
               </div>

@@ -4,6 +4,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Link } from "react-router-dom";
 
+
 const MainContent = () => {
   useGSAP(() => {
     let tl = gsap.timeline();

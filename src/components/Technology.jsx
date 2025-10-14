@@ -18,6 +18,7 @@ import gsapimg from "../assets/GSAP_2023.webp";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Header from "./Header.jsx";
+import Footer from "./Footer.jsx"
 function Technology() {
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -346,6 +347,7 @@ function Technology() {
           </div>
         </div>
       </div>
+      <Footer/>
       </Container>
     
   );

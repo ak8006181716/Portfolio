@@ -15,6 +15,7 @@ import VideoTube from "./Projects/VideoTube.jsx";
 import Ems from "./Projects/Ems.jsx";
 import Mobile_app from "./Projects/Mobile_app.jsx";
 import Ride_sharing_app from "./Projects/Ride_sharing_app.jsx";
+import Weather_app from "./Projects/Weather_app.jsx";
 
 
 
@@ -34,6 +35,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/Ems" element={<Ems />} />
         <Route path="/Mobile_app" element={<Mobile_app />} />
         <Route path="/Ride_sharing_app" element={<Ride_sharing_app />} />
+        <Route path="/Weather_app" element={<Weather_app />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>

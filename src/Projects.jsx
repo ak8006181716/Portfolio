@@ -10,7 +10,8 @@ import weather_app from "./assets/preview_img/Weather_app.png";
 import Container from "./components/Container.jsx";
 import Header from "./components/Header.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExternalLinkAlt, faCode, faEye, faHeart, faStar } from "@fortawesome/free-solid-svg-icons";
+import { faExternalLinkAlt, faCode, faEye, faHeart, faStar, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -34,7 +35,8 @@ const Projects = () => {
       codeUrl: "https://github.com/ak8006181716/Ecommerce",
       technologies: ["React", "Tailwind CSS", "Node", "MongoDB", "Express"],
       color: "blue",
-      featured: true
+      featured: true,
+      route: "/E-Commerce"
     },
     {
       id: 2,
@@ -45,7 +47,8 @@ const Projects = () => {
       codeUrl: "https://github.com/ak8006181716/youtube_clone",
       technologies: ["React", "Tailwind CSS", "Node", "MongoDB", "Express"],
       color: "red",
-      featured: true
+      featured: true,
+      route: "/VideoTube"
     },
     {
       id: 3,
@@ -56,7 +59,8 @@ const Projects = () => {
       codeUrl: "https://github.com/ak8006181716/EMS",
       technologies: ["React", "Tailwind CSS", "Node", "MongoDB", "Express"],
       color: "indigo",
-      featured: true
+      featured: true,
+      route: "/Ems"
     },
     {
       id: 4,
@@ -67,7 +71,8 @@ const Projects = () => {
       codeUrl: "https://github.com/ak8006181716/mini_mobile_app_builder",
       technologies: ["React", "Tailwind CSS", "Node", "MongoDB", "Express", "React Native"],
       color: "cyan",
-      featured: true
+      featured: true,
+      route: "/Mobile_app"
     },
     {
       id: 5,
@@ -78,7 +83,8 @@ const Projects = () => {
       codeUrl: "https://github.com/ak8006181716/Ride_sharing_app",
       technologies: ["React", "Tailwind CSS", "Node", "MongoDB", "Express", "Blockchain", "Smart Contract"],
       color: "orange",
-      featured: false
+      featured: false,
+      route: "/Ride_sharing_app"
     },
     {
       id: 6,
@@ -89,7 +95,8 @@ const Projects = () => {
       codeUrl: "https://github.com/ak8006181716/Personal_Finance_Tracker",
       technologies: ["Next.js", "Tailwind CSS", "Node", "Express", "MongoDB", "SQL"],
       color: "emerald",
-      featured: true
+      featured: true,
+      route: "/Personal_Finance_Tracker"
     },
     {
       id: 7,
@@ -100,18 +107,20 @@ const Projects = () => {
       codeUrl: "https://github.com/ak8006181716/Ai_Chatbot",
       technologies: ["React", "Tailwind CSS", "GSAP"],
       color: "violet",
-      featured: false
+      featured: false,
+      route: "/Ai_chatbot"
     },
     {
       id: 8,
       title: "Weather App",
-      description: "A sleek web or mobile application that fetches and displays weather information for user-specified cities or locations.",
+      description: "A sleek web or mobile application that fetches and displays weather information for user-specified cities or locations. and it is not a perfact",
       image: weather_app,
       liveUrl: "https://ak8006181716.github.io/Weather-app",
       codeUrl: "https://github.com/ak8006181716/Weather-app",
       technologies: ["HTML", "CSS", "JavaScript"],
       color: "sky",
-      featured: true
+      featured: true,
+      route: "/Weather_app"
     }
   ];
 
@@ -395,9 +404,22 @@ const Projects = () => {
                     <h3 className={`text-xl text-gray-200 mb-3 font-semibold transition-colors duration-300 ${colors.text}`}>
                       {project.title}
                     </h3>
-                    <p className="text-gray-300 mb-4 leading-relaxed text-sm">
-                      {project.description}
+                    <p className="text-gray-300 mb-1 leading-relaxed text-sm">
+                      {project.description.length > 120 
+                        ? `${project.description.substring(0, 120)}...` 
+                        : project.description
+                      }
                     </p>
+                    
+                    {project.description.length > 120 && (
+                      <Link 
+                        to={project.route}
+                        className="inline-flex items-center gap-1 mb-4 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors duration-300 group"
+                      >
+                        Read more
+                        <FontAwesomeIcon icon={faArrowRight} className="text-xs group-hover:translate-x-1 transition-transform duration-300" />
+                      </Link>
+                    )}
 
                     {/* Technologies */}
                     <div className="flex flex-wrap gap-2 mb-6">
