@@ -468,13 +468,13 @@ const Projects = () => {
             <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/20 max-w-2xl mx-auto">
               <h3 className="text-2xl font-semibold text-white mb-4">Like What You See?</h3>
               <p className="text-gray-300 mb-6">Let's work together on your next project!</p>
-              <a 
-                href="/contact" 
+              <Link 
+                to="/contact" 
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold py-3 px-8 rounded-xl hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105 hover:shadow-lg"
               >
                 Get In Touch
                 <FontAwesomeIcon icon={faExternalLinkAlt} className="text-sm" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
