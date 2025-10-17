@@ -36,7 +36,7 @@ const MainContent = () => {
 
   return (
     <>
-      <main className="py-8 md:py-16 min-h-screen flex items-center relative overflow-hidden">
+      <main className="py-8 md:py-16 min-h-screen  flex items-center relative overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-full blur-3xl animate-pulse"></div>

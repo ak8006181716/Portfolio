@@ -189,17 +189,18 @@ const Footer = () => {
         <div className="border-t border-white/10 bg-gradient-to-r from-white/5 to-white/10 backdrop-blur-sm">
           <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              <div className="flex items-center gap-2 text-gray-400">
+              <div className="flex items-center flex-wrap gap-2 text-gray-400">
                 <span>© 2025 Ankit Kumar. Made with</span>
                 <FontAwesomeIcon icon={faHeart} className="text-red-500 text-sm animate-pulse" />
                 <span>and modern web technologies</span>
               </div>
-              <div className="flex items-center gap-6 text-sm text-gray-400">
+              <div className="flex items-center gap-4 text-sm text-gray-400">
                 <span>Full Stack Developer</span>
                 <span>•</span>
                 <span>React Specialist</span>
                 <span>•</span>
                 <span>UI/UX Enthusiast</span>
+                
               </div>
             </div>
           </div>

@@ -65,16 +65,16 @@ const About = () => {
                 <div className="relative">
                   <img 
                     src={dummy} 
-                    alt="Ankit Kumar" 
-                    className="rounded-3xl h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto w-auto relative shadow-2xl hover:scale-105 transition-transform duration-500 border-2 border-white/20 group-hover:border-white/40" 
+                    alt="Ankit Kumar Image" 
+                    className="rounded-3xl  h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto w-auto relative shadow-2xl hover:scale-105 transition-transform duration-500 border-2 border-white/20 group-hover:border-white/40" 
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-3xl"></div>
                 </div>
               </div>
             </div>
             
-            <div className="w-full lg:w-1/2 flex justify-center flex-col items-center">
-              <div className="relative bg-gradient-to-r from-white/5 to-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 mb-8">
+            <div className="w-full lg:w-1/2 flex m-2 justify-center flex-col items-center">
+              <div className="relative bg-gradient-to-r from-white/5 to-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20 mb-8">
                 <p className="para text-gray-200 text-lg leading-relaxed relative z-10">
                   I am a dedicated and versatile full stack developer with a passion for
                   creating efficient and user-friendly web applications. I have worked

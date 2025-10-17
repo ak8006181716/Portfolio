@@ -30,7 +30,7 @@ const Header = () => {
 
     if (isMenuOpen) {
       document.addEventListener('keydown', handleKeyDown);
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = 'unset';
       
       // Focus the first link in the mobile menu
       const firstLink = document.querySelector('#mobile-menu nav a');
@@ -46,9 +46,10 @@ const Header = () => {
       document.body.style.overflow = 'unset';
     };
   }, [isMenuOpen]);
+  
 
   return (
-    <header className="relative z-50 backdrop-blur-sm bg-black/20 border-b border-white/10">
+    <header className="relative z-50 backdrop-blur-sm bg-black/20 border-b border-white/10 ">
       <div className="flex items-center justify-between py-4 px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link to="/" className="group text-2xl sm:text-3xl md:text-4xl font-bold text-white hover:text-blue-300 transition-all duration-300 relative">
@@ -113,7 +114,7 @@ const Header = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-white text-2xl hover:text-blue-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded-lg p-2 hover:bg-white/10"
+          className="md:hidden text-white text-3xl hover:text-blue-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded-lg p-2 hover:bg-white/10"
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={isMenuOpen}
         >
@@ -123,7 +124,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div 
-        className={`md:hidden fixed inset-0 z-40 transition-all duration-300 ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
+        className={`md:hidden fixed  inset-0 z-40 transition-all duration-300 ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
         aria-hidden={!isMenuOpen}
       >
         {/* Backdrop */}
@@ -139,7 +140,7 @@ const Header = () => {
           aria-modal="true"
           aria-labelledby="mobile-menu-title"
         >
-          <div className="p-6">
+          <div className="p-6 bg-gray-900 rounded-xl">
             {/* Hidden title for accessibility */}
             <h2 id="mobile-menu-title" className="sr-only">Mobile Navigation Menu</h2>
             
