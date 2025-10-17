@@ -196,10 +196,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-4 text-sm text-gray-400">
                 <span>Full Stack Developer</span>
-                <span>•</span>
-                <span>React Specialist</span>
-                <span>•</span>
-                <span>UI/UX Enthusiast</span>
+                
                 
               </div>
             </div>
