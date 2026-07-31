@@ -17,9 +17,9 @@ export const ProjectsShowcase: React.FC = () => {
     : PROJECTS.filter(p => p.category === activeCategory);
 
   return (
-    <section id="projects" className="py-24 relative z-10">
+    <section id="projects" className={`py-24 relative ${selectedProject ? 'z-[100]' : 'z-10'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <motion.div
@@ -60,9 +60,8 @@ export const ProjectsShowcase: React.FC = () => {
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`relative px-4 py-2 text-xs font-mono font-medium rounded-xl transition-all duration-200 ${
-                    isActive ? 'text-white' : 'text-slate-400 hover:text-slate-200'
-                  }`}
+                  className={`relative px-4 py-2 text-xs font-mono font-medium rounded-xl transition-all duration-200 ${isActive ? 'text-white' : 'text-slate-400 hover:text-slate-200'
+                    }`}
                 >
                   {isActive && (
                     <motion.div
@@ -197,13 +196,13 @@ export const ProjectsShowcase: React.FC = () => {
       {/* Case Study / Architecture Breakdown Drawer Modal */}
       <AnimatePresence>
         {selectedProject && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+          <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setSelectedProject(null)}
-              className="fixed inset-0 bg-black/80 backdrop-blur-md"
+              className="fixed inset-0 bg-black/85 backdrop-blur-md z-[100]"
             />
 
             <motion.div
@@ -211,7 +210,7 @@ export const ProjectsShowcase: React.FC = () => {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
               transition={{ type: 'spring', stiffness: 350, damping: 25 }}
-              className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-3xl bg-[#0e0e14] border border-white/10 shadow-[0_25px_70px_rgba(0,0,0,0.9)] p-6 sm:p-8 space-y-6 z-50 custom-scrollbar"
+              className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-3xl bg-[#0e0e14] border border-white/10 shadow-[0_25px_70px_rgba(0,0,0,0.95)] p-6 sm:p-8 space-y-6 z-[101] custom-scrollbar my-auto"
             >
               {/* Close Button */}
               <button

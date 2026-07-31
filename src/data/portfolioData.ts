@@ -50,7 +50,7 @@ export const PROJECTS: Project[] = [
     category: 'Backend & Cloud',
     description: 'High-throughput automated calling system with real-time queue management, webhook telemetry, call logging, and interactive agent dashboards.',
     longDescription: 'Engineered a robust telecommunication service designed for high-concurrency outbound call automation. Built asynchronous queue pipelines with Redis and Node.js to manage thousands of dispatch calls efficiently while maintaining real-time call telemetry via WebSockets.',
-    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop',
+    image: '/projects/smart_auto_dialer.png',
     technologies: ['Node.js', 'Express', 'Redis', 'PostgreSQL', 'Twilio Webhooks', 'React', 'Docker'],
     features: [
       'Asynchronous call queuing with Redis BullMQ',
@@ -73,7 +73,7 @@ export const PROJECTS: Project[] = [
     category: 'Full Stack',
     description: 'Full-stack online storefront featuring instant product indexing, user auth, dynamic cart management, and payment gateway webhooks.',
     longDescription: 'SmartWear Ecommerce delivers a frictionless shopping experience for modern smart wearables. Built with React and Node.js, featuring optimized server queries, JWT auth, inventory decrement concurrency guards, and custom administrative product controls.',
-    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200&auto=format&fit=crop',
+    image: '/projects/smartwear_ecommerce.png',
     technologies: ['React', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB', 'Stripe API', 'JWT'],
     features: [
       'Instant search and multi-facet product filtering',
@@ -96,7 +96,7 @@ export const PROJECTS: Project[] = [
     category: 'AI & Automation',
     description: 'AI platform enabling users to upload complex PDF documents, extract contextual knowledge, and converse via LLM embeddings.',
     longDescription: 'Developed an Enterprise Retrieval-Augmented Generation (RAG) assistant using FastAPI, OpenAI embeddings, and vector similarity search. Enables users to parse massive documents instantly and receive verbatim semantic answers backed by precise page citations.',
-    image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop',
+    image: '/projects/ai_document_assistant.png',
     technologies: ['FastAPI', 'Python', 'OpenAI API', 'LangChain', 'Pinecone', 'Next.js', 'Tailwind CSS'],
     features: [
       'Multi-format PDF text extraction and semantic chunking',
@@ -119,7 +119,7 @@ export const PROJECTS: Project[] = [
     category: 'Backend & Cloud',
     description: 'Resilient distributed backend architecture leveraging Spring Cloud Eureka, API Gateway, Resilience4j circuit breakers, and Docker containers.',
     longDescription: 'Architected a production-grade microservices system breaking down monolithic operational burdens into modular Spring Boot services. Integrated Eureka service discovery, centralized configuration servers, distributed tracing, and fault-tolerant fallback mechanisms.',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop',
+    image: '/projects/spring_boot_microservices.png',
     technologies: ['Spring Boot', 'Java 17', 'Spring Cloud Eureka', 'API Gateway', 'Docker', 'PostgreSQL', 'RabbitMQ'],
     features: [
       'Centralized Spring Cloud API Gateway with JWT verification filters',
