@@ -8,7 +8,7 @@ export const PERSONAL_INFO = {
   email: 'ankitk8006@gmail.com',
   phone: '+91 8006181716',
   github: 'https://github.com/ak8006181716',
-  linkedin: 'https://www.linkedin.com/in/ankit-kumar-5206b42aa',
+  linkedin: 'https://www.linkedin.com/in/ankitkumar02',
   twitter: 'https://x.com/Ankit8006Kumar',
   instagram: 'https://www.instagram.com/i_am_ankitkumar89',
   availability: 'Open for Full Stack & Backend Engineering Opportunities',

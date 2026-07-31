@@ -94,9 +94,10 @@ Direct link to download official resume:
 
 ## 📬 Contact & Links
 
-- **Email**: [ankit952329@gmail.com](mailto:ankit952329@gmail.com)
+- **Email**: [ankitk8006@gmail.com](mailto:ankitk8006@gmail.com)
 - **GitHub**: [github.com/ak8006181716](https://github.com/ak8006181716)
-- **LinkedIn**: [linkedin.com/in/ankit-kumar-fullstack](https://linkedin.com/in/ankit-kumar-fullstack)
+- **LinkedIn**: [linkedin.com/in/ankitkumar02](https://linkedin.com/in/ankitkumar02)
+- **Phone**: +91 8006181716
 - **Location**: India
 
 ---
